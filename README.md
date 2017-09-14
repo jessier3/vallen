@@ -1,4 +1,5 @@
-Vallen Technical Challenge - 9-14-2017
+Vallen Technical Challenge - 9-14-2017<br />
+Two links to access functionality: /pubication /issue<br />
 
 Install Symfony2 (version 2.4.~) using Composer<br /><br />
   Install 2 vendors using Composer<br />
