@@ -1,1 +1,19 @@
-<mxfile host="app.diagrams.net" modified="2020-11-30T19:25:44.347Z" agent="5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.67 Safari/537.36" version="13.10.4" etag="TnkKqWisTLGeY-TjCYnk" type="github"><diagram id="s-pnJrLLOzenrqnhLAKV">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-12-01T16:14:04.532Z" agent="5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.67 Safari/537.36" etag="eKiEcJ5LbyBeCr-RyDJq" version="13.10.4" type="github">
+  <diagram id="s-pnJrLLOzenrqnhLAKV" name="Page-1">
+    <mxGraphModel dx="2066" dy="1154" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Eg8UeePkZLyRxo1DogdT-1" value="&lt;h1&gt;Pick&lt;/h1&gt;&lt;div&gt;Pick tickets can sorted by stock_location table for warehouse location and/or shipping type for urgency to be printed.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Update all orders to status of Picking. orders.status&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="290" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg8UeePkZLyRxo1DogdT-2" value="Pick sort: (location)&lt;br&gt;1. stock_location.area (large location grouping composed of several rows)&lt;br&gt;2. stock_location.row (physical row id)&lt;br&gt;3. section (grouping in row)&lt;br&gt;4. bin (space containing a signal product type&lt;br&gt;&lt;br&gt;Pick sort: (shipping)&lt;br&gt;shipping_labels table?&amp;nbsp;&lt;br&gt;We should be able to sort by things like Over night, 2 day air, standard, etc&lt;br&gt;&lt;br&gt;Order status update:&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="420" y="40" width="340" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg8UeePkZLyRxo1DogdT-3" value="&lt;h1&gt;Heading&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="190" width="190" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
