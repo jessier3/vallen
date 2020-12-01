@@ -1,17 +1,56 @@
-<mxfile host="app.diagrams.net" modified="2020-12-01T16:14:04.532Z" agent="5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.67 Safari/537.36" etag="eKiEcJ5LbyBeCr-RyDJq" version="13.10.4" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-01T18:03:29.762Z" agent="5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.67 Safari/537.36" etag="WpG0ywxSmPaidpmPqjuZ" version="13.10.4" type="github">
   <diagram id="s-pnJrLLOzenrqnhLAKV" name="Page-1">
-    <mxGraphModel dx="2066" dy="1154" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2066" dy="2254" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Eg8UeePkZLyRxo1DogdT-1" value="&lt;h1&gt;Pick&lt;/h1&gt;&lt;div&gt;Pick tickets can sorted by stock_location table for warehouse location and/or shipping type for urgency to be printed.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Update all orders to status of Picking. orders.status&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="40" y="40" width="290" height="150" as="geometry" />
+        <mxCell id="Eg8UeePkZLyRxo1DogdT-1" value="&lt;h1&gt;Pick Tickets&lt;/h1&gt;&lt;div&gt;Pick tickets can sorted by stock_location table for warehouse location and/or shipping type for urgency to be printed.&amp;nbsp; Brand and Category is useful for understanding how products are grouped on the floor.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Update all orders to status of Picking.&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="320" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="Eg8UeePkZLyRxo1DogdT-2" value="Pick sort: (location)&lt;br&gt;1. stock_location.area (large location grouping composed of several rows)&lt;br&gt;2. stock_location.row (physical row id)&lt;br&gt;3. section (grouping in row)&lt;br&gt;4. bin (space containing a signal product type&lt;br&gt;&lt;br&gt;Pick sort: (shipping)&lt;br&gt;shipping_labels table?&amp;nbsp;&lt;br&gt;We should be able to sort by things like Over night, 2 day air, standard, etc&lt;br&gt;&lt;br&gt;Order status update:&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="420" y="40" width="340" height="200" as="geometry" />
+        <mxCell id="Eg8UeePkZLyRxo1DogdT-2" value="Pick sort: (location)&lt;br&gt;1. stock_location.area (large location grouping composed of several rows)&lt;br&gt;2. stock_location.row (physical row id)&lt;br&gt;3. section (grouping in row)&lt;br&gt;4. bin (space containing a signal product type&lt;br&gt;&lt;br&gt;Pick sort: (shipping)&lt;br&gt;shipping_labels table?&amp;nbsp;&lt;br&gt;We should be able to sort by things like Over night, 2 day air, standard, etc&lt;br&gt;&lt;br&gt;Order status update:&lt;br&gt;order.status" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="400" y="100" width="360" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="Eg8UeePkZLyRxo1DogdT-3" value="&lt;h1&gt;Heading&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="40" y="190" width="190" height="120" as="geometry" />
+        <mxCell id="Eg8UeePkZLyRxo1DogdT-3" value="&lt;h1&gt;Picking&lt;/h1&gt;&lt;div&gt;Two options for picking.&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;1. Based on order: pick all items associated with a particular order&lt;/div&gt;&lt;div&gt;2. Based on location: systematically pick all products in a pick batch by location and then group them by order after picking.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Scan bar code of bin indicating location being adjusted and bar code of products being removed.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Update product status to picked&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="39" y="200" width="321" height="189" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg8UeePkZLyRxo1DogdT-4" value="Location scan&lt;br&gt;1. Update stock_locations with adjusted count.&lt;br&gt;2. Update products.status to Picked" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="400" y="320" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg8UeePkZLyRxo1DogdT-5" value="&lt;h1&gt;Inventory Counts&lt;/h1&gt;&lt;div&gt;Full warehouse count.&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;Count ticket for all bins can be filled out electronically or with printed tickets.&lt;/div&gt;&lt;div&gt;Employees complete the count and submit the ticket.&lt;/div&gt;&lt;div&gt;All deltas should generate a notification for further review.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="39" y="770" width="281" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg8UeePkZLyRxo1DogdT-6" value="&lt;h1&gt;Cycle Counts&lt;/h1&gt;&lt;div&gt;Partial regular counts should be scheduled and completed.&amp;nbsp; Products with frequent deltas should be counted more often.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;All deltas should generate a notification for further review.&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="39" y="930" width="321" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg8UeePkZLyRxo1DogdT-7" value="&lt;h1&gt;Order Processing&lt;/h1&gt;&lt;div&gt;As products move through the process any scan can update the product.status as well as the order.status.&amp;nbsp; Final status should be &#39;shipped&#39; when the product is out the door.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Additional status of home should be updated to the products for the &#39;Try-on&#39; orders.&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="39" y="400" width="321" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg8UeePkZLyRxo1DogdT-8" value="&lt;h1&gt;RMA&lt;/h1&gt;&lt;div&gt;Order status can be updated to returned once all products have been verified.&amp;nbsp; Or it can be given a partially returned status if not all products are received.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Individual products should default to a status of QA until they have been inspected.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Items returned to the shelf should go through a location scan updating both the location and the product.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Discarded products should not be hard deleted.&amp;nbsp; Products kept for parts should also be marked as such.&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="530" width="321" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg8UeePkZLyRxo1DogdT-9" value="See DC standard Orders flow chart &lt;br&gt;for details on specific steps" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="430" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg8UeePkZLyRxo1DogdT-10" value="&lt;font style=&quot;font-size: 20px&quot;&gt;Inventory Database Interaction&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="-30" width="350" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg8UeePkZLyRxo1DogdT-11" value="Count tickets should display area/row/section/bin.&amp;nbsp;&amp;nbsp;&lt;br&gt;It should have a field for employee identifier.&lt;br&gt;It should have a field for qty to be entered.&lt;br&gt;&lt;br&gt;Location_counts table&lt;br&gt;Date/time created and submitted should be recorded automatically when ticket is created and then submitted.&lt;br&gt;Delta should be calculated automatically by comparing location_counts to stock_location qtys." style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="400" y="800" width="360" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg8UeePkZLyRxo1DogdT-12" value="&lt;h1&gt;Purchasing&lt;/h1&gt;&lt;div&gt;Purchased items can have a status of purchased to indicate that they are on order but not yet received.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Partner table helps track when a product should be listed as out of stock for a partner.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Product.reorder contains the inventory level where a product needs to be reordered.&amp;nbsp; This inventory level can be based on products in a certain location such as on the shelf or a combination of locations such as everything not yet received or all locations combined.&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="530" width="360" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg8UeePkZLyRxo1DogdT-13" value="" style="endArrow=none;html=1;exitX=0.125;exitY=1.017;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Eg8UeePkZLyRxo1DogdT-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="610" as="sourcePoint" />
+            <mxPoint x="760" y="523" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Eg8UeePkZLyRxo1DogdT-14" value="" style="endArrow=none;html=1;exitX=0.146;exitY=-0.062;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Eg8UeePkZLyRxo1DogdT-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="610" as="sourcePoint" />
+            <mxPoint x="760" y="760" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
